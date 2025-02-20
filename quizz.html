@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>My Quizz</title>
+<style>
+
+.card{
+  background-color: cadetblue;
+        border:3px solid cyan ;
+        border-radius: 10px;
+        width: 200px;
+        height: 180px;
+        text-align: center;
+        margin-top: 10px;
+}
+
+.answer{
+  text-decoration: aqua;
+
+}
+
+.bnt{
+  text-emphasis-color: red;
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<div class="card">
+<div class="question">
+<h2>Where Squid game Season-1 was played?</h2>
+</div>
+
+
+
+
+<div class="answer">
+  <button onclick="check(this,true) ">New York City</button> 
+  <button onclick="check(this,false) ">South Korea</button>
+
+</div>
+</div>
+<script>
+function check(button,Correct){
+  let question =button.parentElement.parentElement
+if(correct){
+  question.style.backgroundColor="green"
+  ;
+} else {
+  question.style.backgroundColor='red'
+  ;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
