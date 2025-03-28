@@ -1,21 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
+html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payplants Pro</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<title>voter id</title>
+<style>
+body{
+    background-color: skyblue;
+    box-shadow: 100px 100px 200px black;
+    border-radius: 100px;
+}
+
+.voter{
+    align-items:center;
+    text-align: center;
+    justify-items: center;
+    background-color: rgb(4, 37, 69);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 6px solid rgb(29, 206, 226);
+    background-size: 80%;
+    text-decoration-color: beige;
+    text-emphasis-color: white;
+    text-decoration-style: solid;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 50px;
+   
+
+}
+
+.text{
+    text-decoration-color:rgb(245, 242, 242) ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-size-adjust: 80%;
+    color: antiquewhite;
+}
+    
+.btn{
+padding:8px;
+border-radius: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 15px;
+background-color: pink;
+color: black;
+border: 3 solid white;
+box-shadow: 3px 3px 5px black;
+box-shadow: 3px 3px 5px black;
+
+}
 
 
 
 
+
+.card{
+text-align: center;
+background-color: brown;
+width: 300px;
+height: 200px ;
+margin: auto;
+box-shadow: 2px 2px 5px rgb(14, 0, 0);
+border-radius:20px;
+margin-top:5px 5px 10px white;
+
+}
+
+.text{
+font-family:Arial, Helvetica, sans-serif;
+font-size: 30px;
+color:black;
+
+}
+
+.result{
+    text-align: center;
+background-color:black;
+width: 300px;
+height: 200px ;
+margin: auto;
+box-shadow: 20px 20px 50px black;
+border-radius:20px;
+}
+
+
+
+
+</style>
 
 </head>
-<body class="bg-gradient-to-b from-blue-400 to-light blue-400">
-    
-<div id="login">
-
-
-
-    
+<body>
+<div class="voter">
+<h1 class="text">Voter Id Ebigibility</h1>
 </div>
+
+<div class="header">
+<div class="card">
+<h4 class="text">Enter Your Birth</h4>
+<input class="year" id="year" type="number">
+<br>
+<button class="btn">Check now</button>
+</div>
+</div>
+</div>
+
+
+
+<div id="result" class="result">
+    <h4 class="text2" id="text2"></h4>
+</div>
+<script>
+
+var year = document.getElementById('year').value;
+var age = 2025-year;
+  
+var age = document.getElementById('year').value;
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
