@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List </title>
+</head>
+<body>
+    <div>
+ <h2>To Do List</h2>  
+ <input type="text" placeholder="Enter Task" id="task"/>
+ <button id="addbtn" onclick="AddTask">AddTask</button>
+</div>
+
+<div>
+<ul id="tasklist"></ul>
+</div>
+
+<script>
+function AddTask(){
+var task = document.getElementById("task").value;
+
+if (task==""){document. getElementById ("update"). textContent="Invalid Task"}
+
+var li = document.createElement 
+("li");
+li.textContent = task;
+document.getElementById ("tasklist").appendChild(li)
+}
+
+
+
+
+
+</script>
+</body>
+</html>
