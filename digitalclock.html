@@ -1,0 +1,73 @@
+<html>
+
+<head>
+
+<title>My Digital Clock</title>
+
+<style>
+
+#myclock {
+
+background-color: gray;
+
+border: 2px solid white;
+
+height: 100px;
+
+width: 200px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+margin: auto;
+
+font-size: 50px;
+
+font-weight: bold;
+
+border-radius: 20px;
+
+box-shadow: 2px 2px 5px black;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="myclock" onload="ShowTime()"></div>
+
+<script>
+
+function ShowTime() {
+
+var date = new Date();
+
+var MyClock = document.getElementById("myclock");
+
+var h = date.getHours();
+
+var m = date.getMinutes();
+
+var s = date.getSeconds();
+
+var time = `${h}:${m}:${s}`;
+
+MyClock.innerText = time;
+
+setTimeout(ShowTime, 1000);
+
+}
+
+ShowTime();
+
+</script>
+
+</body>
+
+</html>
