@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Voter Id</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="text-center bg-gray-800 mt-40 h-70 w-70 p-3 m-auto rounded-xl">
+        <h1 class="text-white font-bold text-2x1">Voter ID Checker</h1>
+        <input class="bg-gray-200 m-5 p-2 rounded-3x1 text-center font-bold w-30" type="number" id="age"
+            placeholder="Enter Age" />
+
+        <br />
+        <button onclick="Check()" class="bg-gray-300 text-black px-3 py-2 rounded-x1 font-bold m-1 hover :bg-gray-600 hover :text-white">
+
+        
+
+        </button>
+    </div>
+    <div class="text-center bg-gray-800 mt-10 h-15 w-70 p-3 m-auto rounded-xl">
+        <h1 id="result"></h1>
+    </div>
+
+    </div>
+
+    <script>
+function Check(){
+var age=document.getElementById("age").value;
+if(age>18){
+    document.getElementById("result").textContent ="you are Eligible"
+}else{
+    document.getElementById("result").textContent ="you are not Eligible"
+}
+
+}
+
+
+    </script>
+</body>
+
+</html
