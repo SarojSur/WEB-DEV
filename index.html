@@ -2,17 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title> adding footer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
     <style>
-    body{
+
+
+
+      
+
+
+
+
+     body{
         background-color: skyblue;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: italic;
-        text-shadow: 10px 10px 10px gray;
+        
+        
     }
+
+     
+      .carousel-container {
+
+
+        height: 300px; /* Adjust based on your image height */
+
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+
+
+}
+
+
+/* Hide all slides by default */
+
+.myslides {
+
+display: none;
+
+max-height: 100%; /* Ensure images fit within container */
+
+max-width: 100%;
+
+
+
+
+
+
+
+
+
+
+}
+
+
+      body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .topnav{
+        overflow: hidden;
+        background-color: #333;
+      }
+      .topnav a{
+        float: left;
+        color: deeppink;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .topnav a:hover{
+        background-color: blueviolet;
+        color: deepskyblue;
+      }
+      .topnav a.active{
+        background-color: yellowgreen;
+        color: darkcyan;
+      }
+
+
+
+
+
+ 
 
     .footer{
      position: fixed;
@@ -31,26 +107,124 @@ p{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    text-shadow: 20px 10px 10px rgb(0, 0, 0);
+    
 }
 
 
-
-
-
-
-
-
+      
 
 
 
     </style>
 </head>
 <body>
-    <h1>let add footer</h1>
-    <div class="footer">  
-        <p>contact number is 999 or +91 plice wil arest</p>
+
+  <div class="topnav">
+      <a class="active" href="index.html">home</a>
+      
+      <a href="about.html">item's</a>
+      <a href="contactme.html">Dress</a>   
+      <a href="gallery.html">Toy</a>
+      <a href="toy.html">contact</a>
+
+    </div>
+
+
+
+
+  
+    
+    
+ 
+      
+   
+
+
+
+
+<div class="carousel-container">
+    <img class="myslides" src="picture 7.jpg" height="900px" width="1600">
+    <img class="myslides" src="durga.jpg" height="120000000000px" width="800">
+    <img class="myslides" src="dress.jpg" height="900px" width="1600">
+
+
+</div>
+
+
+
+    <section>
+<h1>Read the following passage to understand all the things in webside.Please kindly read it:</h1>
+
+<p>
+<img src="Image10.jpg" style="width: 350px;height: 280px ;float: right; margin-left: 20px;  "> 
+
+Welcome to our Shopping center.Happy Durga puja.To see the product press the above button.If you need drees press the dress button and if you need toy press the joy button and if you need puja's item press the item button.If you want to contact with us or wants to buy a product press the contact button.
+
+</p>
+
+
+    </section>
+
+    <br><br><br><br><br><br><br><br><br>
+<div>
+<h1>Pastry</h1>
+
+<section>
+<p>
+
+
+
+</p>
+
+</section>
+
+
+
+</div>
+
+
+<div class="footer">  
+        <p>contact number is 01789910830</p>
     </div>
     
+
+
+
+<script>
+var index = 0;
+function carousel(){ 
+ var i;
+ var x = document.getElementsByClassName( "myslides");
+ for  ( i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
+
+    
+ }
+
+ index++;
+
+ if ( index > x.length) {
+    index=1;
+ }
+
+ x[index-1].style.display= "block"
+
+ setTimeout(carousel,2000);
+
+
+
+
+
+
+}
+
+carousel();
+
+
+
+</script>
+
+
+
 </body>
 </html>
