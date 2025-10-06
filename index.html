@@ -2,17 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title> adding footer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
     <style>
-    body{
+
+
+
+
+     body{
         background-color: skyblue;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: italic;
-        text-shadow: 10px 10px 10px gray;
+        
+        
     }
+
+     
+      .carousel-container {
+
+
+        height: 300px; /* Adjust based on your image height */
+
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+
+
+}
+
+
+/* Hide all slides by default */
+
+.myslides {
+
+display: none;
+
+max-height: 100%; /* Ensure images fit within container */
+
+max-width: 100%;
+
+
+
+
+
+
+
+
+
+
+}
+
+
+      body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .topnav{
+        overflow: hidden;
+        background-color: #333;
+      }
+      .topnav a{
+        float: left;
+        color: deeppink;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .topnav a:hover{
+        background-color: blueviolet;
+        color: deepskyblue;
+      }
+      .topnav a.active{
+        background-color: yellowgreen;
+        color: darkcyan;
+      }
+
+
+
+
+
+ 
 
     .footer{
      position: fixed;
@@ -31,26 +103,117 @@ p{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    text-shadow: 20px 10px 10px rgb(0, 0, 0);
+    
 }
 
 
-
-
-
-
-
-
+      
 
 
 
     </style>
 </head>
 <body>
-    <h1>let add footer</h1>
-    <div class="footer">  
+    
+    <div class="topnav">
+      <a class="active" href="index.html">home</a>
+      
+      <a href="about.html">about</a>
+      <a href="contactme.html">contact me</a>   
+      <a href="gallery.html">Gallery</a>
+    </div>
+
+
+
+
+<div class="carousel-container">
+    <img class="myslides" src="pic 1.jpeg" height="500px" width="1600">
+    <img class="myslides" src="pic 2.png" height="500px" width="1600">
+    <img class="myslides" src="pic 3.jpg" height="500px" width="1600">
+
+
+</div>
+
+
+
+    <section>
+<h1>Pizza</h1>
+
+<p>
+<img src="Image 1.jpg" style="width: 350px;height: 280px ;float: right; margin-left: 20px;  "> 
+
+
+Pizza (Italian: [ˈpittsa], Neapolitan: [ˈpittsə]) is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at a high temperature, traditionally in a wood-fired oven.[1] A small pizza is sometimes called a pizzetta. A person who makes pizza is known as a pizzaiolo.
+
+
+</p>
+
+
+    </section>
+
+    <br><br><br><br><br><br><br><br><br>
+<div>
+<h1>Pastry</h1>
+
+<section>
+<p>
+
+<img src="Image 2.jpg" style="width: 350px;height: 280px ;float: right; margin-left: 20px;  "> 
+
+
+Pastry refers to a variety of doughs, as well as the sweet and savoury baked goods made from them. These goods are often called pastries as a synecdoche, and the dough may be accordingly called pastry dough for clarity. Sweetened pastries are often described as bakers' confectionery
+
+</p>
+
+</section>
+
+
+
+</div>
+
+
+<div class="footer">  
         <p>contact number is 999 or +91 plice wil arest</p>
     </div>
     
+
+
+
+<script>
+var index = 0;
+function carousel(){ 
+ var i;
+ var x = document.getElementsByClassName( "myslides");
+ for  ( i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
+
+    
+ }
+
+ index++;
+
+ if ( index > x.length) {
+    index=1;
+ }
+
+ x[index-1].style.display= "block"
+
+ setTimeout(carousel,2000);
+
+
+
+
+
+
+}
+
+carousel();
+
+
+
+</script>
+
+
+
 </body>
 </html>
